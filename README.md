@@ -1,4 +1,4 @@
-# Web Mapping Workshop
+# Web Mapping Workshop- re#
 
 ## Originally Presented By
 [Code for Dayton](http://codefordayton.org/),
@@ -11,6 +11,7 @@ Saturday, September 10th, 2016
 
 ## Location
 Global Hawk
+1200-1300
 
 ## Cost
 Free
