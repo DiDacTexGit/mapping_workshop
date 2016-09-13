@@ -1,21 +1,19 @@
 # Web Mapping Workshop
 
-## Presented By
+## Originally Presented By
 [Code for Dayton](http://codefordayton.org/),
 [Dayton Data Visualization](http://www.meetup.com/daytondv),
 [Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)
 
-## Date
+## Original Date
 Saturday, September 10th, 2016
 10:00am - 2:00pm
 
 ## Location
-The Entrepreneurs Center
-714 E Monument Avenue
-Dayton, OH 45402
+Global Hawk
 
 ## Cost
-$5.00 - Lunch Provided
+Free
 
 ## Materials
 - [Workshop Website](http://codefordayton.org/mapping_workshop)
@@ -42,9 +40,10 @@ $5.00 - Lunch Provided
     - Team up or work solo
 
 ## Prerequisites
-- Please bring a laptop to work on.
+- Please bring a laptop to work on. RDT&E
 - Passing knowledge of HTML and CSS would be helpful
-- Text Editor for Web Development. We'll be using [Atom](http://atom.io)
+- Text Editor for Web Development. 
+- Python and Chrome installed
 
 ## Workshop Datasets
 This list is a work in progress. Please submit a pull request with your favorite resources!
