@@ -1,18 +1,17 @@
 # Web Mapping Workshop
 
-## Presented By
+## Originally Presented By
 [Code for Dayton](http://codefordayton.org/),
 [Dayton Data Visualization](http://www.meetup.com/daytondv),
 [Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)
 
 ## Date
-Saturday, September 10th, 2016
+Monday October 3rd, 2016
 
 ## Location
-The Entrepreneurs Center
+AFRL Global Hawk
+1200-13000
 
-## Cost
-$5.00 - Lunch Provided
 
 ## Materials
 - [Workshop Website](http://codefordayton.github.io/mapping_workshop)
