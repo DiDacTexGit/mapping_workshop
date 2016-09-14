@@ -4,6 +4,7 @@
 [Code for Dayton](http://codefordayton.org/),
 [Dayton Data Visualization](http://www.meetup.com/daytondv),
 [Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)
+on September 10, 2016
 
 ## Date
 Monday October 3rd, 2016
