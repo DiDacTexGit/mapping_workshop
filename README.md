@@ -5,20 +5,19 @@
 [Dayton Data Visualization](http://www.meetup.com/daytondv),
 [Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)
 
-## Original Date
 Saturday, September 10th, 2016
 10:00am - 2:00pm
 
 ## Location
-Global Hawk
-1200-1300
+Sensors Global Hawk
 
-## Cost
-Free
+## When
+October 3, 2016
+From 1200-1300
 
 ## Materials
 - [Workshop Website](http://codefordayton.org/mapping_workshop)
-- [Starter Project (this repo - master branch)](https://github.com/codefordayton/mapping_workshop)
+- [Starter Project (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
 
 ## Agenda
 - Introductions
@@ -41,10 +40,11 @@ Free
     - Team up or work solo
 
 ## Prerequisites
-- Please bring a laptop to work on. RDT&E
-- Passing knowledge of HTML and CSS would be helpful
-- Text Editor for Web Development. 
+- Please bring a RDT&E laptop to work on.  
+- Text Editor for Web Development.
 - Python and Chrome installed
+- Passing knowledge of HTML and CSS would be helpful
+
 
 ## Workshop Datasets
 This list is a work in progress. Please submit a pull request with your favorite resources!

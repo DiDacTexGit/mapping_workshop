@@ -28,7 +28,7 @@ module.exports = {
     },
     'port': 9000,
     'open': 'local',
-    'browser': 'google-chrome',
+    'browser': 'chrome',
     'reloadOnRestart': false,
     'notify': false
 };
