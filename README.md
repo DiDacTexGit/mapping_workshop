@@ -1,13 +1,5 @@
 # Web Mapping Workshop- rehash
 
-## Originally Presented By
-[Code for Dayton](http://codefordayton.org/),
-[Dayton Data Visualization](http://www.meetup.com/daytondv),
-[Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)
-
-Saturday, September 10th, 2016
-10:00am - 2:00pm
-
 ## Location
 Sensors Eagle (Email Evelyn Boettcher for passes)
 
@@ -54,3 +46,11 @@ This list is a work in progress. Please submit a pull request with your favorite
 - http://www.poi-factory.com
 - http://www.daytonohio.gov/daytonopendata
 - http://www.cityofdayton.org/departments/pcd/Pages/CensusInformation.aspx
+
+## Originally Presented By
+[Code for Dayton](http://codefordayton.org/),
+[Dayton Data Visualization](http://www.meetup.com/daytondv),
+[Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)
+
+Saturday, September 10th, 2016
+10:00am - 2:00pm
