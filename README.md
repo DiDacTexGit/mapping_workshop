@@ -9,10 +9,10 @@ Saturday, September 10th, 2016
 10:00am - 2:00pm
 
 ## Location
-Sensors Global Hawk
+Sensors Eagle (Email Evelyn Boettcher for passes)
 
 ## When
-October 3, 2016
+October 4, 2016
 From 1200-1300
 
 ## Materials
