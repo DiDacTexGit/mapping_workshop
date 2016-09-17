@@ -9,13 +9,14 @@
 - From 1200-1300
 
 ## Why
-Move beyond presenting location specific data from Excel to interactive maps.
+Move beyond presenting location specific data in Excel to interactive maps.
 
-| Excel     | Web Map       |
-|----------| ---------------|
+| Excel: Before Tutorial     | Web Map: After Tutorial       |
+|----------------------------| ------------------------------|
 |![Before Tutorial](https://github.com/ejboettcher/mapping_workshop/raw/master/icons/Excel.png)|![After Tutorial](https://github.com/ejboettcher/mapping_workshop/raw/master/icons/Map.png)|
 
-By leveraging the hard and creative work from other people, you can move beyond spread sheets to web maps with very little web software skill.
+By leveraging the hard and creative work from other people (eg Fork their code),
+ you can move beyond spreadsheets to web maps with very little web software skill.
 
 ## Materials
 - [Starter Project (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
@@ -52,6 +53,7 @@ By leveraging the hard and creative work from other people, you can move beyond 
 
 ## Workshop Datasets
 This list is a work in progress. Please submit a pull request with your favorite resources!
+- geojson.io  to create geojson file
 - https://github.com/caesar0301/awesome-public-datasets
 - https://www.data.gov/
 - http://www.forbes.com/sites/bernardmarr/2016/02/12/big-data-35-brilliant-and-free-data-sources-for-2016

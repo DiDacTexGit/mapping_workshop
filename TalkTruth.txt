@@ -1,5 +1,5 @@
 latitude	longitude	name	Gender	type	description	team	phone	icon
-39.716757	-84.163187	Bob	Male	person		Blue	123456789	male_blue
+39.7316757	-84.163187	Bob	Male	person		Blue	123456789	male_blue
 39.73882	-84.180224	corner reflector		calibration	The big one	NA	123456789	Calboard
 39.73892	-84.18224	Jane	Female	person		Blue	123456789	female_blue
 39.73792	-84.180024	Toyota		car		Red	123456789	car_red
@@ -34,7 +34,7 @@ latitude	longitude	name	Gender	type	description	team	phone	icon
 39.74642	-84.179994	Donna N.	Female	person		Red	123456789	female_blue
 39.73842	-84.175424	Calibration Board		calibration	For RGB camera	NA	123456789	Calboard
 39.720611	-84.184967	There be dragons		Dragon	"watch out, forbidden lands"	NA	555123456	dragon
-39.722205	-84.168332	Bean Beans the musical..		Beans	"watch out, gassy"	NA	555123456	beans
+39.72055	-84.1572	Bean Beans the musical..		Beans	"watch out, gassy"	NA	555123456	beans
 39.741426	-84.218779	Plane		Plane	Time- 1105	NA	5555551234	dot_25
 39.738666	-84.207475	Plane		Plane	Time- 1107	NA	5555551234	dot_50
 39.735906	-84.196171	Plane		Plane	Time- 1109	NA	5555551234	dot_75
