@@ -13,7 +13,7 @@ Move beyond presenting location specific data from Excel to interactive maps.
 
 | Excel     | Web Map       |
 |----------| ---------------|
-|![Before Tutorial][icons/Excel.PNG]|![After Tutorial][icons/Map.PNG]|
+|![Before Tutorial][/icons/Excel.PNG]|![After Tutorial][icons/Map.PNG]|
 
 By leveraging the hard and creative work from other people, you can move beyond spread sheets to web maps with very little web software skill.
 
