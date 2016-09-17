@@ -1,11 +1,12 @@
 # Web Mapping Workshop- rehash
 
 ## Location
-Sensors Eagle (Email Evelyn Boettcher for passes)
+- Sensors Bld
+- Eagle Conference Rm (Email Evelyn Boettcher for passes)
 
 ## When
-October 4, 2016
-From 1200-1300
+- October 4, 2016
+- From 1200-1300
 
 ## Why
 Move beyond presenting location specific data from Excel to interactive maps.
@@ -17,8 +18,9 @@ Move beyond presenting location specific data from Excel to interactive maps.
 By leveraging the hard and creative work from other people, you can move beyond spread sheets to web maps with very little web software skill.
 
 ## Materials
-- [Workshop Website](http://codefordayton.org/mapping_workshop)
 - [Starter Project (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
+- [Origninal Workshop Website](http://codefordayton.org/mapping_workshop)
+- [Origninal Project repo](https://github.com/codefordayton/mapping_workshop)
 
 ## Agenda
 - Introductions
@@ -41,10 +43,11 @@ By leveraging the hard and creative work from other people, you can move beyond 
     - Team up or work solo
 
 ## Prerequisites
-- Please bring a RDT&E laptop to work on.  
+- Please bring a RDT&E laptop to work on.  (not needed, but it might be nice)
 - Text Editor for Web Development.
 - Python and Chrome installed
 - Passing knowledge of HTML and CSS would be helpful
+- Code already cloned (if following along)
 
 
 ## Workshop Datasets
