@@ -7,6 +7,15 @@ Sensors Eagle (Email Evelyn Boettcher for passes)
 October 4, 2016
 From 1200-1300
 
+## Why
+Move beyond presenting location specific data from Excel to interactive maps.
+
+| Excel     | Web Map       |
+|----------| ---------------|
+|![Before Tutorial][icons/Excel.PNG]|![After Tutorial][icons/Map.PNG]|
+
+By leveraging the hard and creative work from other people, you can move beyond spread sheets to web maps with very little web software skill.
+
 ## Materials
 - [Workshop Website](http://codefordayton.org/mapping_workshop)
 - [Starter Project (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
