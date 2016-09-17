@@ -18,7 +18,8 @@ module.exports = {
         '**/*.html',
         '**/*.js',
         '**/*.css',
-        'images/**/*'
+        'images/**/*',
+        'icons/*'
     ],
     'watchOptions': {
         'ignoreInitial': true
