@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="../lib/prism/prism.css" />
         <script src="../lib/prism/prism.js"></script>
         
-        th, td {   padding: 15px;}
+        th, td {   padding: 15px;
+            border: 5px;}
     </head>
 
     <body>
@@ -82,18 +83,17 @@
                     <pre class="line-numbers language-bash">npm install</pre>
                     Afer the dependencies are installed, run
                     <pre class="line-numbers language-bash">npm start</pre>
-                    <p> Then, open a Chrome browser to <a href="http://localhost:9000">http://localhost:9000</a>.</p>
-                    <p>This page is served by a tool called BrowserSync, which will
+                    <p> Then, open a browser to <a href="http://localhost:9000">http://localhost:9000</a>.</p>
+                    <p>The page is served by a tool called BrowserSync, which will
                     synchronize any browsers looking at the page (useful for mobile device testing)
                     as well as <strong>automatically</strong> reload the page when you make changes to the source files.</p>
                     <p>The package: package.json contains the BrowserSync configuration file</p>
                 
                     </th>
                     <th>
-                    Type the command  (python 2.7) 
+                    Type the command  (<strong>python 2.7</strong>) 
                     <pre class="line-numbers language-bash">python -m SimpleHTTPServer</pre>
-                    <p>or in <strong>python 3.x </strong></p>
-                    <p> type the command </p>
+                    <p>or in <strong>python 3.x </strong>   type the command </p>
                     <pre class="line-numbers language-bash">python -m http.server</pre>
                     Then, open a browser to <a href="http://localhost:8000">http://localhost:8000</a>
                     </th>
@@ -103,29 +103,7 @@
                 
             </table>
                 
-            <ol>
-                <li>
-                    <strong>NodeJS</strong>: There is a package.json provided for
-                    you along with a configuration file for BrowserSync. Open a
-                    terminal, change directories to the mapping_workshop folder,
-                    and execute the command
-                    <pre class="line-numbers language-bash">npm install</pre>
-                    Afer the dependencies are installed, run
-                    <pre class="line-numbers language-bash">npm start</pre>
-                    and open a browser to <a href="http://localhost:9000">http://localhost:9000</a>.
-                    This page is served by a tool called BrowserSync, which will
-                    synchronize any browsers looking at the page (useful for mobile device testing)
-                    as well as automatically reload the page when you make changes to the source files.
-                </li>
-                <li>
-                    <strong>Python</strong>: If your machine has python on it,
-                    you can quickly serve web pages by opening a terminal, change directories
-                    to the mapping_workshop folder, and execute the command
-                    <pre class="line-numbers language-bash">python -m SimpleHTTPServer</pre>
-                    Then, open a browser to <a href="http://localhost:8000">http://localhost:8000</a>
-                </li>
-            </ol>
-
+            
             <p>
                 Once you can open a web browser and see the starter project,
                 you'll be ready to move on to making maps! If you have problems,
