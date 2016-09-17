@@ -50,7 +50,7 @@
 
         <section class="content">
             <h1>Development Environment</h1>
-
+            
             <p>
                 To get started, you'll need to check out the master branch of
                 the
@@ -68,6 +68,35 @@
                 To see the page as we're developing, you have two options: Nodes.js
                 (NODES.JS is <strong>NOT</strong> approved software for us yet) and Python.
             </p>
+            <table style="width:95%">
+                <tr>
+                    <th><strong>NodeJS</strong></th>
+                    <th><strong>Python</strong></th>
+                </tr>
+                <tr>
+                    <th>The package: package.json contains the BrowserSync configuration file.</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>In command terminal (in mapping_workshop dir), type:
+                    <pre class="line-numbers language-bash">npm install</pre>
+                    Afer the dependencies are installed, run
+                    <pre class="line-numbers language-bash">npm start</pre>
+                    and open a browser to <a href="http://localhost:9000">http://localhost:9000</a>.
+                    This page is served by a tool called BrowserSync, which will
+                    synchronize any browsers looking at the page (useful for mobile device testing)
+                    as well as automatically reload the page when you make changes to the source files.
+                
+                </th>
+                <th>
+                    execute the command 
+                    <pre class="line-numbers language-bash">python -m SimpleHTTPServer</pre>
+                    Then, open a browser to <a href="http://localhost:8000">http://localhost:8000</a>
+                </th>
+                    
+                </tr>
+            </table>
+                
             <ol>
                 <li>
                     <strong>NodeJS</strong>: There is a package.json provided for
