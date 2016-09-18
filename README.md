@@ -1,8 +1,8 @@
 # Web Mapping Workshop- rehash
 
 ## Location
-- Sensors Bld
-- Eagle Conference Rm (Email Evelyn Boettcher for passes)
+- Sensors Bldg
+- Eagle Conference Rm (Email Evelyn J. Boettcher for passes)
 
 ## When
 - October 4, 2016
