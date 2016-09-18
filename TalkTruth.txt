@@ -3,7 +3,7 @@ latitude	longitude	name	Gender	type	description	team	phone	icon
 39.73882	-84.180224	corner reflector		calibration	The big one	NA	123456789	Calboard
 39.73892	-84.18224	Jane	Female	person		Blue	123456789	female_blue
 39.73792	-84.180024	Toyota		car		Red	123456789	car_red
-39.73842	-84.175224	corner reflector		calibration	The small one	NA	123456789	Calboard
+39.73762	-84.177224	corner reflector		calibration	The small one	NA	123456789	Calboard
 39.73699	-84.172243	SUV		car	Bob's car	Red	123456789	car_red
 39.73942	-84.173224	Bus		car	Support bus	Blue	123456789	car_blue
 39.73842	-84.170224	Bus		car	transport bus	Red	123456789	car_red
@@ -30,8 +30,8 @@ latitude	longitude	name	Gender	type	description	team	phone	icon
 39.73712	-84.175224	Mark Wine	Male	person		Blue	123456789	male_blue
 39.73942	-84.172114	Fred Oz	Male	person		Red	123456789	female_red
 39.73842	-84.177774	Sue Orman	Female	person		Blue	123456789	female_blue
-39.73742	-84.178824	Stephanie K.	Female	person		Blue	123456789	female_red
-39.74642	-84.179994	Donna N.	Female	person		Red	123456789	female_blue
+39.73742	-84.178824	Stephanie K.	Female	person		Red	123456789	female_red
+39.74642	-84.179994	Donna N.	Female	person		Blue	123456789	female_blue
 39.73842	-84.175424	Calibration Board		calibration	For RGB camera	NA	123456789	Calboard
 39.720611	-84.184967	There be dragons		Dragon	"watch out, forbidden lands"	NA	555123456	dragon
 39.72055	-84.1572	Bean Beans the musical..		Beans	"watch out, gassy"	NA	555123456	beans

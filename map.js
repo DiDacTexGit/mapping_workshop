@@ -3,16 +3,6 @@
 $(document).ready(function() {
   // The first part of this is the same as what we've done before, but a little more concise...
   var DAYTON = [39.7589, -84.1916];
-  var mymap = L.map('map').setView(DAYTON, 8);
-  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 22,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(mymap);
-
-  // Switching back to a featureGroup here featureGroup()
-  //var markerLayer = L.featureGroup(); // No clustering
-  var markerLayer   = L.markerClusterGroup();
-  markerLayer.addTo(mymap);
 
   // Ok, now we have to get the data. We'll use jQuery here to make things
   // easier on us.
@@ -39,17 +29,22 @@ $(document).ready(function() {
                   name:         values[2],
                   type:         values[3],
                   description:  values[5],
+                  team:         values[6],
                   phone:        values[7],
                   icon:         values[8]
               });
           }
       }
+
       // infoTemplate is a string template for use with L.Util.template()
       var infoTemplate = '<h2>{name}</h2><p>Info: {description}</p><p>Phone: {phone}</p>';
-
+      var markerLayer   = L.markerClusterGroup();
       // Ok, now we have an array of locations. We can now plot those on our map!
       len           = locations.length;
       var location;
+      var bluemarker  = [];  //Seperate the markers into red/blue/other
+      var redmarker   = [];
+      var namarker    = [];
       for (i = 0; i < len; i++) {
           location  = locations[i];
           // Here we're defining a new icon to use on our map.
@@ -63,10 +58,45 @@ $(document).ready(function() {
           var marker;
               marker      = L.marker([location.latitude, location.longitude], {
                   icon: customIcon
+
               });
-          marker.addTo(markerLayer)
-              .bindPopup(L.Util.template(infoTemplate, location));
+          if (location.team      == "Blue"){
+              bluemarker.push(marker.addTo(markerLayer)
+                    .bindPopup(L.Util.template(infoTemplate, location)));
+          }else if (location.team == "Red") {
+              redmarker.push(marker.addTo(markerLayer)
+                    .bindPopup(L.Util.template(infoTemplate, location)));
+          }else{
+              namarker.push(marker.addTo(markerLayer)
+                    .bindPopup(L.Util.template(infoTemplate, location)));
+          }
+          //marker.addTo(markerLayer)
+          //      .bindPopup(L.Util.template(infoTemplate, location));
       }
+      var red   = L.layerGroup(redmarker);
+      var blue  = L.layerGroup(bluemarker);
+      var na    = L.layerGroup(namarker);
+      var allmarker = redmarker.concat(bluemarker);
+      allmarker    = allmarker.concat(namarker);
+      var allm  = L.layerGroup(allmarker);
+      //-------------Setting up the map ---------------
+      var mymap = L.map('map',{
+        layers:[red, blue, na],
+        type:'markercluster'
+        }).setView(DAYTON, 8);
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 22,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(mymap);
+
+      var overlaymarkers={
+        "Red Team": red,
+        "Blue Team":blue,
+        "Support":na,
+        "All": allm
+      }
+      markerLayer.addTo(mymap);
+      L.control.layers(overlaymarkers).addTo(mymap);
 
       //_________________Bad Lands Area Layer___________________________________
       // Add Boundary layers
