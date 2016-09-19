@@ -19,7 +19,8 @@ By leveraging the hard and creative work from other people (eg Fork their code),
  you can move beyond spreadsheets to web maps with very little web software skill.
 
 ## Materials
-- [Starter Project (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
+- [ReHash Repo (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
+- [ReHash Workshop Website](https://ejboettcher.github.io/mapping_workshop)
 - [Origninal Workshop Website](http://codefordayton.org/mapping_workshop)
 - [Origninal Project repo](https://github.com/codefordayton/mapping_workshop)
 
