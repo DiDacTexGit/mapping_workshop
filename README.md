@@ -7,7 +7,7 @@
 on September 10, 2016
 
 ## Date
-Tueaday October 4rd, 2016
+Tueaday October 4th, 2016
 
 ## Location
 Sensors Eagle Conference Rm (Ask Evelyn Boettcher for building pass)
