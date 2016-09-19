@@ -7,14 +7,16 @@
 on September 10, 2016
 
 ## Date
-Monday October 3rd, 2016
+Tueaday October 4rd, 2016
 
 ## Location
-AFRL Global Hawk
+Sensors Eagle Conference Rm (Ask Evelyn Boettcher for building pass)
 1200-13000
 
 
 ## Materials
+- [ReHash Repo (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
+- [ReHash Workshop Website](https://ejboettcher.github.io/mapping_workshop)
 - [Workshop Website](http://codefordayton.github.io/mapping_workshop)
 - [Starter Project (this repo - master branch)](https://github.com/codefordayton/mapping_workshop)
 
