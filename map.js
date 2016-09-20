@@ -3,7 +3,14 @@
 $(document).ready(function() {
   // The first part of this is the same as what we've done before, but a little more concise...
   var DAYTON = [39.7589, -84.1916];
-
+  var mymap = L.map('map',{
+  //  layers:[red, blue, na],
+  //  type:'markercluster'
+    }).setView(DAYTON, 8);
+  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 22,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(mymap);
   // Ok, now we have to get the data. We'll use jQuery here to make things
   // easier on us.
   $.get('TalkTruth.txt', function(data) {
@@ -80,14 +87,7 @@ $(document).ready(function() {
       allmarker    = allmarker.concat(namarker);
       var allm  = L.layerGroup(allmarker);
       //-------------Setting up the map ---------------
-      var mymap = L.map('map',{
-        layers:[red, blue, na],
-        type:'markercluster'
-        }).setView(DAYTON, 8);
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 22,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(mymap);
+
 
       var overlaymarkers={
         "Red Team": red,
@@ -97,7 +97,8 @@ $(document).ready(function() {
       }
       markerLayer.addTo(mymap);
       L.control.layers(overlaymarkers).addTo(mymap);
-
+      mymap.fitBounds(markerLayer.getBounds());
+    });// $.get()
       //_________________Bad Lands Area Layer___________________________________
       // Add Boundary layers
       var bdAreaLayer   = L.featureGroup();
@@ -109,7 +110,7 @@ $(document).ready(function() {
       };
 
       // First, we need to load the GeoJSON file
-      $.get('watcharea.json', function(data) {
+      $.getJSON('watcharea.json', function(data) {
           // L.geoJSON takes a second argument for processing options. Here, we're
           // telling Leaflet to run our bindPopup function (defined above) on
           // each feature in the counties.oh.json geojson file.
@@ -120,7 +121,6 @@ $(document).ready(function() {
 
       }); // $.get()
       // Now we can zoom the map to the extent of the markers
-      mymap.fitBounds(markerLayer.getBounds());
-    });
+
 
 }); // document.ready()
