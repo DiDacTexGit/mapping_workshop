@@ -1,5 +1,5 @@
 latitude	longitude	name	Gender	type	description	team	phone	icon
-39.7316757	-84.163187	Bob	Male	person		Blue	123456789	male_blue
+39.7316757	-84.163187	Bob	Male	person	The Intern	Blue	123456789	male_blue
 39.73882	-84.180224	corner reflector		calibration	The big one	NA	123456789	Calboard
 39.73892	-84.18224	Jane	Female	person		Blue	123456789	female_blue
 39.73792	-84.180024	Toyota		car		Red	123456789	car_red
