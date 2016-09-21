@@ -3,14 +3,41 @@
 $(document).ready(function() {
   // The first part of this is the same as what we've done before, but a little more concise...
   var DAYTON = [39.7589, -84.1916];
-  var mymap = L.map('map',{
-  //  layers:[red, blue, na],
-  //  type:'markercluster'
-    }).setView(DAYTON, 8);
-  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+  //-------------Different Types of Maps---------
+var Streetmap= L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 22,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(mymap);
+  });//.addTo(mymap);
+
+  var Stamen_Terrain = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
+  	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  	subdomains: 'abcd',
+  	minZoom: 0,
+  	maxZoom: 18,
+  	ext: 'png'});
+  var Roads =   L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png', {
+ 	attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+ });
+
+// https: also suppported.
+var Esri_WorldImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+  maxZoom:18
+});
+//---------------------------------------
+var mymap = L.map('map',{
+layers:[Streetmap]
+  }).setView(DAYTON, 8);
+
+var baseMaps={
+  "Street":Streetmap,
+  "TopoMap":Stamen_Terrain,
+  "WorldImagery":Esri_WorldImagery,
+  "Roads_Labels":Roads
+};
+
+
   // Ok, now we have to get the data. We'll use jQuery here to make things
   // easier on us.
   $.get('TalkTruth.txt', function(data) {
@@ -96,9 +123,10 @@ $(document).ready(function() {
         "All": allm
       }
       markerLayer.addTo(mymap);
-      L.control.layers(overlaymarkers).addTo(mymap);
+      L.control.layers(overlaymarkers, baseMaps).addTo(mymap);
       mymap.fitBounds(markerLayer.getBounds());
     });// $.get()
+
       //_________________Bad Lands Area Layer___________________________________
       // Add Boundary layers
       var bdAreaLayer   = L.featureGroup();
