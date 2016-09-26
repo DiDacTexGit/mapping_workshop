@@ -22,7 +22,7 @@ Sensors Eagle Conference Rm (Ask Evelyn Boettcher for building pass)
 
 ## DEMO
  Let's take a look at the
-                <a href="00_Demo/index.html" target="_blank">Demo here</a>.
+                <a href="tutorial/00_Demo/index.html" target="_blank">Demo here</a>.
 ## Agenda
     - Introduction to Web Mapping
     - Introduction to Leaflet
