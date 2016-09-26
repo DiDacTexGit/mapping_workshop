@@ -21,9 +21,11 @@ Sensors Eagle Conference Rm (Ask Evelyn Boettcher for building pass)
 - [Starter Project (this repo - master branch)](https://github.com/codefordayton/mapping_workshop)
 
 ## DEMO
- Let's take a look at the code for the ...
+- Let's take a look at the code for the ...
                 <a href="tutorial/00_Demo/index.html" target="_blank">Demo here</a>.
+                
 - [ReHash DEMO Website](https://ejboettcher.github.io/mapping_workshop/tutorial/00_Demo)
+
 ## Agenda
     - Introduction to Web Mapping
     - Introduction to Leaflet
