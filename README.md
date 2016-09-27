@@ -21,8 +21,10 @@ By leveraging the hard and creative work from other people (eg Fork their code),
 ## Materials
 - [ReHash Repo (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
 - [ReHash Workshop Website](https://ejboettcher.github.io/mapping_workshop)
+- [ReHash DEMO](https://ejboettcher.github.io/mapping_workshop/tutorial/00_Demo/)
 - [Origninal Workshop Website](http://codefordayton.org/mapping_workshop)
 - [Origninal Project repo](https://github.com/codefordayton/mapping_workshop)
+
 
 ## Agenda
 - Introductions
