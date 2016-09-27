@@ -1,11 +1,10 @@
 // $(document).ready() is a jQuery function that delays executing the passed in
 // JavaScript function until the browser has loaded all of the HTML.
 $(document).ready(function() {
-  // The first part of this is the same as what we've done before, but a little more concise...
-  var DAYTON = [39.7589, -84.1916];
+  var DAYTON = [39.7589, -84.1916];  // Var to point the map too
 
   //-------------Different Types of Maps---------
-var Streetmap= L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  var Streetmap= L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 22,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   });//.addTo(mymap);
@@ -15,31 +14,40 @@ var Streetmap= L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
   	subdomains: 'abcd',
   	minZoom: 0,
   	maxZoom: 18,
-  	ext: 'png'});
+  	ext: 'png'
+  });
+
   var Roads =   L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png', {
- 	attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
- });
+ 	  attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  });
 
-// https: also suppported.
-var Esri_WorldImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
-  maxZoom:18
-});
-//---------------------------------------
-var mymap = L.map('map',{
-layers:[Streetmap]
-  }).setView(DAYTON, 8);
+  // https: also suppported.
+  var Esri_WorldImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	   attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+     maxZoom:18
+   });
 
-var baseMaps={
-  "Street":Streetmap,
-  "TopoMap":Stamen_Terrain,
-  "WorldImagery":Esri_WorldImagery,
-  "Roads_Labels":Roads
-};
+   //---------------------------------------
+   // Set the Map ------------------------
+   var mymap = L.map('map',{
+     layers:[Streetmap]
+   }).setView(DAYTON, 8);
 
+   // Map choices.----------
+   var baseMaps={
+     "Street":Streetmap,
+     "TopoMap":Stamen_Terrain,
+     "WorldImagery":Esri_WorldImagery,
+     "Roads_Labels":Roads
+  };
 
-  // Ok, now we have to get the data. We'll use jQuery here to make things
-  // easier on us.
+  // ----------------Markers ---------------------
+  var red, blue, na, allm; // These will be the markers for map
+  var bluemarker  = [];  //Seperate the markers into red/blue/other
+  var redmarker   = [];
+  var namarker    = [];
+  var allmarker;
+  // Here we are using jQuery to get the Marker data
   $.get('TalkTruth.txt', function(data) {
       // jQuery gives us back the data as a big string, so the first step
       // is to split on the newlines
@@ -72,13 +80,10 @@ var baseMaps={
 
       // infoTemplate is a string template for use with L.Util.template()
       var infoTemplate = '<h2>{name}</h2><p>Info: {description}</p><p>Phone: {phone}</p>';
-      var markerLayer   = L.markerClusterGroup();
+
       // Ok, now we have an array of locations. We can now plot those on our map!
       len           = locations.length;
       var location;
-      var bluemarker  = [];  //Seperate the markers into red/blue/other
-      var redmarker   = [];
-      var namarker    = [];
       for (i = 0; i < len; i++) {
           location  = locations[i];
           // Here we're defining a new icon to use on our map.
@@ -94,61 +99,61 @@ var baseMaps={
                   icon: customIcon
 
               });
+              marker.bindPopup(L.Util.template(infoTemplate,location));
           if (location.team      == "Blue"){
-              bluemarker.push(marker.addTo(markerLayer)
-                    .bindPopup(L.Util.template(infoTemplate, location)));
+            bluemarker.push(marker);
           }else if (location.team == "Red") {
-              redmarker.push(marker.addTo(markerLayer)
-                    .bindPopup(L.Util.template(infoTemplate, location)));
+              redmarker.push(marker);
           }else{
-              namarker.push(marker.addTo(markerLayer)
-                    .bindPopup(L.Util.template(infoTemplate, location)));
+              namarker.push(marker);
           }
-          //marker.addTo(markerLayer)
-          //      .bindPopup(L.Util.template(infoTemplate, location));
       }
-      var red   = L.layerGroup(redmarker);
-      var blue  = L.layerGroup(bluemarker);
-      var na    = L.layerGroup(namarker);
-      var allmarker = redmarker.concat(bluemarker);
-      allmarker    = allmarker.concat(namarker);
-      var allm  = L.layerGroup(allmarker);
-      //-------------Setting up the map ---------------
 
 
-      var overlaymarkers={
+    red   = L.markerClusterGroup().addLayers(redmarker);
+    blue  =  L.markerClusterGroup().addLayers(bluemarker);
+    //blue  = L.layerGroup(bluemarker);
+    na    =  L.markerClusterGroup().addLayers(namarker);
+    allmarker = redmarker.concat(bluemarker);
+    allmarker    = allmarker.concat(namarker);
+    allm  =  L.markerClusterGroup().addLayers(allmarker);
+    allm.addTo(mymap);
+
+    // Now we can zoom the map to the extent of the markers
+    mymap.fitBounds(allm.getBounds());
+
+    //-------------Setting up the map ---------------
+    var overlaymarkers={
         "Red Team": red,
         "Blue Team":blue,
         "Support":na,
         "All": allm
-      }
-      markerLayer.addTo(mymap);
-      L.control.layers(overlaymarkers, baseMaps).addTo(mymap);
-      mymap.fitBounds(markerLayer.getBounds());
-    });// $.get()
+    }
+    L.control.layers(overlaymarkers, baseMaps).addTo(mymap);
+    });//$.get()
 
-      //_________________Bad Lands Area Layer___________________________________
-      // Add Boundary layers
-      var bdAreaLayer   = L.featureGroup();
-      bdAreaLayer.addTo(mymap);
+    //_________________Bad Lands Area Layer___________________________________
+    // Add Boundary layers
+    var bdAreaLayer   = L.featureGroup();
+    bdAreaLayer.addTo(mymap);
 
-      var bdAreaPopup           = function(feature, layer) {
+
+    var bdAreaPopup           = function(feature, layer) {
             var bdAreaTemplate  = '<h2>{Name}</h2><p>Walkie Channel: {Walkie_Chn}</p><p>Area ID: {AREA_ID}</p>';
             layer.bindPopup(L.Util.template(bdAreaTemplate, feature.properties));
-      };
+    };
 
       // First, we need to load the GeoJSON file
-      $.getJSON('watcharea.json', function(data) {
+    $.getJSON('watcharea.json', function(data) {
           // L.geoJSON takes a second argument for processing options. Here, we're
           // telling Leaflet to run our bindPopup function (defined above) on
           // each feature in the counties.oh.json geojson file.
           L.geoJson(data, {
               onEachFeature: bdAreaPopup
           }).addTo(bdAreaLayer);
+        //  mymap.fitBounds(bdAreaLayer.getBounds());
+    }); // $.get()
 
-
-      }); // $.get()
-      // Now we can zoom the map to the extent of the markers
-
+    // Set the Map
 
 }); // document.ready()
