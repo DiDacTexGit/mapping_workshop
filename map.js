@@ -123,9 +123,14 @@ $(document).ready(function() {
     mymap.fitBounds(allm.getBounds());
 
     //-------------Setting up the map ---------------
+    var customIcon  = L.icon({
+               iconUrl: 'icons/male_blue.png',
+               iconSize: [15,15]
+           });
     var overlaymarkers={
         "Red Team": red,
-        "Blue Team":blue,
+        //"Blue Team":blue,
+        "<img src='icons/female_blue_sm.png'/>":blue,
         "Support":na,
         "All": allm
     }
