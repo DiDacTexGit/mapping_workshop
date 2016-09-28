@@ -1,7 +1,7 @@
 {
-  "name": "mapping_workshop",
-  "version": "1.0.0",
-  "description": "## Presented By [Code for Dayton](http://codefordayton.org/), [Dayton Data Visualization](http://www.meetup.com/daytondv), [Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)",
+  "name": "mapping_workshop AFRL",
+  "version": "1.1.0",
+  "description": "## Originally Presented By [Code for Dayton](http://codefordayton.org/), [Dayton Data Visualization](http://www.meetup.com/daytondv), [Girl Develop It](http://www.meetup.com/Girl-Develop-It-Dayton)",
   "main": "index.js",
   "scripts": {
     "start": "browser-sync start --config bs-config.js",
