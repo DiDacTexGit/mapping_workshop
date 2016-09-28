@@ -10,6 +10,11 @@
         <!-- Prism (syntax highlighting) -->
         <link rel="stylesheet" href="../lib/prism/prism.css" />
         <script src="../lib/prism/prism.js"></script>
+        <style>
+        th, td { padding: 5px;}
+        table,th,td{   
+            border:10px;}
+        </style>
     </head>
 
     <body>
@@ -50,7 +55,7 @@
 
         <section class="content">
             <h1>Development Environment</h1>
-
+            
             <p>
                 To get started, you'll need to check out the master branch of
                 the
@@ -68,35 +73,46 @@
                 To see the page as we're developing, you have two options: Nodes.js
                 (NODES.JS is <strong>NOT</strong> approved software for us yet) and Python.
             </p>
-            <ol>
-                <li>
-                    <strong>NodeJS</strong>: There is a package.json provided for
-                    you along with a configuration file for BrowserSync. Open a
-                    terminal, change directories to the mapping_workshop folder,
-                    and execute the command
+            <hr />
+            <p><strong>In the mapping_workship directory...</strong></p>
+            <table style="width:95%">
+                <tr>
+                    <th style="width:50%"><h3>NodeJS</h3></th>
+                    <th style="width:50%"><h3>Python</h3></th>
+                </tr>
+                
+                <tr>
+                    <th>Using command terminal, type:
                     <pre class="line-numbers language-bash">npm install</pre>
                     Afer the dependencies are installed, run
                     <pre class="line-numbers language-bash">npm start</pre>
-                    and open a browser to <a href="http://localhost:9000">http://localhost:9000</a>.
-                    This page is served by a tool called BrowserSync, which will
+                    <p> Then, open a browser to <a href="http://localhost:9000">http://localhost:9000</a>.</p>
+                    <p>The page is served by a tool called BrowserSync, which will
                     synchronize any browsers looking at the page (useful for mobile device testing)
-                    as well as automatically reload the page when you make changes to the source files.
-                </li>
-                <li>
-                    <strong>Python</strong>: If your machine has python on it,
-                    you can quickly serve web pages by opening a terminal, change directories
-                    to the mapping_workshop folder, and execute the command
+                    as well as <strong>automatically</strong> reload the page when you make changes to the source files.</p>
+                    <p>The package: package.json contains the BrowserSync configuration file</p>
+                
+                    </th>
+                    <th>
+                    Type the command  (<strong>python 2.7</strong>) 
                     <pre class="line-numbers language-bash">python -m SimpleHTTPServer</pre>
+                    or in <strong>python 3.x </strong>   type the command 
+                    <pre class="line-numbers language-bash">python -m http.server</pre>
                     Then, open a browser to <a href="http://localhost:8000">http://localhost:8000</a>
-                </li>
-            </ol>
-
+                    </th>
+                </tr>
+             
+               
+                
+            </table>
+                
+            
             <p>
                 Once you can open a web browser and see the starter project,
                 you'll be ready to move on to making maps! If you have problems,
-                raise your hand and a TA will be by to assist you.
+                Google is your friend.
             </p>
-
+            <hr />
             <h2>Further Reading</h2>
             <ul>
                 <li><a href="https://nodejs.org">NodeJS</a></li>

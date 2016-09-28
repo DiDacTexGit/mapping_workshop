@@ -1,0 +1,42 @@
+latitude	longitude	name	Gender	type	description	team	phone	icon
+39.7316757	-84.163187	Bob	Male	person	The Intern	Blue	123456789	male_blue
+39.73882	-84.180224	corner reflector		calibration	The big one	NA	123456789	Calboard
+39.73892	-84.18224	Jane	Female	person		Blue	123456789	female_blue
+39.73792	-84.180024	Toyota		car		Red	123456789	car_red
+39.73762	-84.177224	corner reflector		calibration	The small one	NA	123456789	Calboard
+39.73699	-84.172243	SUV		car	Bob's car	Red	123456789	car_red
+39.73942	-84.173224	Bus		car	Support bus	Blue	123456789	car_blue
+39.73842	-84.170224	Bus		car	transport bus	Red	123456789	car_red
+39.73672	-84.176224	Bus		car		Blue	123456789	car_blue
+39.73701	-84.177224	Bus		car		Red	123456789	car_red
+39.73722	-84.178224	BMW		car	Team Leaders Car	Blue	123456789	car_blue
+39.73607	-84.178524	Honda		car		Red	123456789	car_red
+39.73666	-84.177724	Mark	Male	person	Team lead	Blue	123456789	male_blue
+39.73665	-84.178524	Fred	Male	person		Red	123456789	male_red
+39.73664	-84.171524	Sue	Female	person	Caring bag	Blue	123456789	female_blue
+39.73663	-84.171924	Stephanie P.	Female	person		Red	123456789	female_red
+39.73662	-84.176724	Donna L.	Female	person		Blue	123456789	female_blue
+39.73649	-84.171924	Josh	Male	person		Red	123456789	male_red
+39.73648	-84.179424	Mark	Male	person		Blue	123456789	male_blue
+39.73647	-84.175224	Fred	Male	person		Red	123456789	male_red
+39.73646	-84.175224	Sue Me	Female	person		Blue	123456789	female_blue
+39.73645	-84.175224	Stephanie L.	Female	person	Team lead	Red	123456789	female_red
+39.73644	-84.185224	Donna Z.	Female	person		Blue	123456789	female_blue
+39.73643	-84.175224	Mark D	Male	person		Red	123456789	male_red
+39.73752	-84.171924	Fred D.	Male	person		Blue	123456789	male_blue
+39.73742	-84.175264	Sue You	Female	person	Contractor	Red	123456789	female_red
+39.73732	-84.175294	Stephanie	Female	person	Go to person	Blue	123456789	female_blue
+39.73722	-84.175324	Donna Omomma	Female	person		Red	123456789	female_red
+39.73712	-84.175224	Mark Wine	Male	person		Blue	123456789	male_blue
+39.73942	-84.172114	Fred Oz	Male	person		Red	123456789	female_red
+39.73842	-84.177774	Sue Orman	Female	person		Blue	123456789	female_blue
+39.73742	-84.178824	Stephanie K.	Female	person		Red	123456789	female_red
+39.74642	-84.179994	Donna N.	Female	person		Blue	123456789	female_blue
+39.73842	-84.175424	Calibration Board		calibration	For RGB camera	NA	123456789	Calboard
+39.720611	-84.184967	There be dragons		Dragon	"watch out, forbidden lands"	NA	555123456	dragon
+39.72055	-84.1572	Bean Beans the musical..		Beans	"watch out, gassy"	NA	555123456	beans
+39.741426	-84.218779	Plane		Plane	Time- 1105	NA	5555551234	dot_25
+39.738666	-84.207475	Plane		Plane	Time- 1107	NA	5555551234	dot_50
+39.735906	-84.196171	Plane		Plane	Time- 1109	NA	5555551234	dot_75
+39.733456	-84.185051	Plane		Plane	Time- 1110	NA	5555551234	dot_100
+39.731216	-84.175438	Plane		Plane	Time- 1113	NA	5555551234	Plane

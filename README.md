@@ -7,16 +7,24 @@
 on September 10, 2016
 
 ## Date
-Monday October 3rd, 2016
+Tueaday October 4th, 2016
 
 ## Location
-AFRL Global Hawk
+Sensors Eagle Conference Rm (Ask Evelyn Boettcher for building pass)
 1200-13000
 
 
 ## Materials
+- [ReHash Repo (this repo - master branch)](https://github.com/ejboettcher/mapping_workshop)
+- [ReHash Workshop Website](https://ejboettcher.github.io/mapping_workshop)
 - [Workshop Website](http://codefordayton.github.io/mapping_workshop)
 - [Starter Project (this repo - master branch)](https://github.com/codefordayton/mapping_workshop)
+
+## DEMO
+- Let's take a look at the code for the ...
+                <a href="tutorial/00_Demo/index.html" target="_blank">Demo here</a>.
+                
+- [ReHash DEMO Website](https://ejboettcher.github.io/mapping_workshop/tutorial/00_Demo)
 
 ## Agenda
     - Introduction to Web Mapping
