@@ -125,7 +125,8 @@ $(document).ready(function() {
     //-------------Setting up the map ---------------
     var overlaymarkers={
         "Red Team": red,
-        "Blue Team":blue,
+        //"Blue Team":blue,
+        "<img src='icons/female_blue_sm.png'/>":blue,
         "Support":na,
         "All": allm
     }
