@@ -154,7 +154,8 @@ $(document).ready(function() {
           // telling Leaflet to run our bindPopup function (defined above) on
           // each feature in the counties.oh.json geojson file.
           L.geoJson(data, {
-              onEachFeature: bdAreaPopup
+              onEachFeature: bdAreaPopup,
+              color:"#8A04FA"
           }).addTo(bdAreaLayer);
         //  mymap.fitBounds(bdAreaLayer.getBounds());
     }); // $.get()
